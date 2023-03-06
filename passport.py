@@ -5,12 +5,11 @@ def check(str):
     new_string = str.split()
     x = []
     for i in range(len(new_string)):
-        if new_string[i].isalpha() == True:
+        if new_string[i].isalpha():
             x1 = new_string[i].title()
             x.append(x1)
-        elif new_string[i].isalpha() == False:
+        elif not new_string[i].isalpha():
             x.append(new_string[i])
-
     print(' '.join(x))
 
 check(string)
